@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEBSITE KAD AND CODING HTML - Enhanced</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        color: #222;
+        scroll-behavior: smooth;
+    }
+
+    /* HEADER NAV */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #d40000;
+        color: white;
+        padding: 15px 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        font-weight: bold;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        opacity: 0.7;
+    }
+
+    header {
+        background: url('https://i.postimg.cc/8jwJD2gd/Bina-Websit-E.png') center/cover no-repeat;
+        height: 350px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+        animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+        font-size: 40px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        text-align: center;
+        padding: 20px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* BUTTON */
+    .btn {
+        display: inline-block;
+        background: #ffd700;
+        padding: 15px 25px;
+        margin-top: 20px;
+        border-radius: 8px;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        border: 2px solid #0047ff;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: #ffea4d;
+        transform: scale(1.05);
+    }
+
+    /* PRICING */
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .price-box {
+        border: 2px solid #d40000;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .price-box:hover {
+        transform: scale(1.05);
+        background: #fff5f5;
+    }
+
+    /* TESTIMONIALS */
+    .testimoni-box {
+        background: #f3f3f3;
+        padding: 20px;
+        margin: 15px 0;
+        border-left: 5px solid #d40000;
+        animation: fadeIn 1.2s;
+    }
+
+    /* FLOATING BUTTON */
+    .floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        padding: 15px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        animation: fadeIn 1.5s;
+    }
+    .floating img {
+        width: 40px;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 15px;
+        background: #0047ff;
+        color: white;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- MENU NAV -->
+<nav>
+    <a href="#hero">Home</a>
+    <a href="#harga">Pakej Harga</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#whatsapp">Whatsapp</a>
+</nav>
+
+<!-- HERO SECTION -->
+<header id="hero">
+    <h1>Bina Website Bajet Serendah RM100!</h1>
+</header>
+
+<!-- CONTENT -->
+<!-- ABOUT SECTION -->
+<div class="container" id="about">
+    <h2>Tentang Kami</h2>
+    <p>Kami menyediakan perkhidmatan membina website moden, pantas dan mampu milik untuk membantu bisnes anda berkembang.</p>
+</div>
+
+<!-- KENAPA PILIH KAMI -->
+<div class="container" id="kenapa">
+    <h2>Kenapa Pilih Kami?</h2>
+    <ul style="text-align:left; max-width:600px; margin:auto; font-size:18px; line-height:1.6;">
+        <li>⚡ Siap dalam masa 24 jam</li>
+        <li>🎨 Design moden & premium</li>
+        <li>💰 Harga mampu milik</li>
+        <li>📱 Mesra telefon pintar</li>
+        <li>🛠️ Sokongan selepas siap</li>
+    </ul>
+</div>
+<div class="container">
+    <h2>Laman Web Bajet Serendah RM50!</h2>
+    <p>Dari <b>0 pelanggan ke 100 pelanggan</b> — kami bantu anda bina website profesional dengan harga bajet.</p>
+
+    <a class="btn" href="#whatsapp">Whatsapp Sekarang!</a>
+</div>
+
+<!-- PAKEJ HARGA -->
+<div class="container" id="harga">
+    <h2>🔥 Pakej Harga</h2>
+    <div class="pricing">
+        <div class="price-box">
+            <h3>Pakej Basic</h3>
+            <p><b>RM50</b></p>
+            <p>1 Page Website</p>
+        </div>
+        <div class="price-box">
+            <h3>Pakej Standard</h3>
+            <p><b>RM80</b></p>
+            <p>5 Page Website</p>
+        </div>
+        <div class="price-box">
+            <h3>Pakej Premium</h3>
+            <p><b>RM130</b></p>
+            <p>Full Website + Custom Design</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- TESTIMONI -->
+<div class="container" id="testimoni">
+    <h2>⭐ Testimoni Pelanggan</h2>
+    <div class="testimoni-box">"Servis terbaik! Website kelihatan sangat profesional." — Aiman</div>
+    <div class="testimoni-box">"Harga berbaloi, kerja pun laju dan kemas!" — Sarah</div>
+    <div class="testimoni-box">"Terbaik! Bisnes saya meningkat selepas ada website." — Hafiz</div>
+    <div class="testimoni-box">"Harga murah tapi hasil padu!" — Siti</div>
+    <div class="testimoni-box">"Siap dalam masa sehari, terbaik!" — Farid</div>    
+</div>
+
+<!-- PORTFOLIO SECTION -->
+<div class="container" id="portfolio">
+    <h2>🔥 Portfolio / Contoh Website</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px;">
+        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" style="width:100%; border-radius:10px;">
+        <img src="https://i.postimg.cc/xcG7dP6z/THWk-AET244XTm-GGYh6EC3w-Hhxf-E4Mu-Uz-CLXTn-XSi.jpg" style="width:100%; border-radius:10px;">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+
+<!-- ADD-ON SERVICES -->
+<div class="container" id="addons">
+    <h2>📦 Pakej Tambahan</h2>
+    <ul style="text-align:left; max-width:600px; margin:auto; font-size:18px; line-height:1.6;">
+        <li>📝 Copywriting Profesional – RM30</li>
+        <li>🎨 Logo Design – RM40</li>
+        <li>🚀 SEO Basic Setup – RM50</li>
+        <li>🔧 Maintenance Bulanan – RM20</li>
+    </ul>
+</div>
+
+<!-- TEAM SECTION -->
+<div class="container" id="team">
+    <h2>👤 Team Kami</h2>
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+        <div style="text-align:center;">
+            <img src="https://i.pravatar.cc/150?img=12" style="border-radius:50%; width:120px;">
+            <p><b>Aliff</b><br>Pereka Website</p>
+        </div>
+        <div style="text-align:center;">
+            <img src="https://i.pravatar.cc/150?img=15" style="border-radius:50%; width:120px;">
+            <p><b>Ammar</b><br>Pereka Grafik & Logo</p>
+        </div>
+
+<!-- CALL TO ACTION SECTION -->
+<div class="container" id="cta" style="background:#ffe000; padding:40px; border-radius:15px; margin-top:60px;">
+    <h2 style="font-size:28px; color:#d40000;">Ready Untuk Mula?</h2>
+    <p style="font-size:20px;">Klik butang di bawah untuk dapatkan website profesional anda sekarang!</p>
+    <a class="btn" href="#whatsapp">Hubungi Kami</a>
+</div>
+
+<!-- WHATSAPP FORM -->
+<div class="container" id="whatsapp">
+    <h2>Borang Whatsapp Automatik</h2>
+    <form action="https://website-kad-and-cod.site123.me/" method="get" target="_blank">
+        <input type="text" name="text" placeholder="Masukkan mesej anda" style="width:100%; padding:12px; font-size:18px;">
+        <button class="btn" type="submit" style="margin-top:10px;">Hantar Whatsapp</button>
+    </form>
+</div>
+
+<!-- LOKASI -->
+<div class="container" id="lokasi">
+    <h2>📍 Lokasi Kami</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253711.58683048032!2d100.08760007905892!3d6.490815275214831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c97e719e8e24d%3A0xfe00f20d9fe01627!2sKangar%2C%20Perlis!5e0!3m2!1sms!2smy!4v1764133093235!5m2!1sms!2smy" width="600" height="400" style="border:0;" allowfullscreen="""></iframe>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://website-kad-and-cod.site123.me/" class="floating">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<footer>
+    © 2025 WEBSITE KAD AND CODING HTML — Semua Hak Terpelihara
+</footer>
+
+</body>
+</html>
